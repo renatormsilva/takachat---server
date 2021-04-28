@@ -6,8 +6,8 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
-const server = app.listen("3002", () => {
-  console.log("Server Running on Port 3002...");
+const server = app.listen("5000", () => {
+  console.log("Server Running on Port 5000");
 });
 
 io = socket(server);
