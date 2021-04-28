@@ -11,8 +11,7 @@ const server = app.listen("3002", () => {
 });
 
 io = socket(server);
-
-server.get("/", function (req, res) {
+app.get("/", function (req, res) {
   res.send("hello wrld");
 });
 
