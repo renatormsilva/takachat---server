@@ -12,6 +12,10 @@ const server = app.listen("3002", () => {
 
 io = socket(server);
 
+server.get("/", function (req, res) {
+  res.send("hello wrld");
+});
+
 io.on("connection", (socket) => {
   console.log("connect");
 
